@@ -14,7 +14,7 @@ button {
 
 header {
     display: flex;
-    width: 80%;
+    width: 90%;
     margin: auto;
     height: 10vh;
     align-items: center;
@@ -73,7 +73,7 @@ nav {
     -webkit-text-fill-color: transparent;
 }
 
-.intro-text {
+.intro-text p {
     margin-top: 5px;
     font-size: 22px;
     color: #585772;
@@ -91,8 +91,6 @@ nav {
     height: 50px;
     cursor: pointer;
     font-size: 16px;
-    margin: 0px 15px 0px 0px;
-    
 }
 
 .cta-add {
@@ -108,6 +106,8 @@ nav {
 
 .cover {
     flex: 1;
+    display: flex;
+    justify-content: center;
     height: 60vh;
 }
 
@@ -130,8 +130,8 @@ nav {
     position: absolute;
     top: 30%;
     right: 30%;
-    height: 60%;
     z-index: -1;
+    height: 60%;
     opacity: 0.4;
 }
 
@@ -139,26 +139,23 @@ nav {
     position: absolute;
     bottom: 0%;
     left: 20%;
-    height: 60%;
     z-index: -1;
 }
 
 .laptop-select {
     width: 15%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     position: absolute;
     right: 20%;
 }
 
 @keyframes drop {
-
     0% {
         opacity: 0;
         transform: translateY(-80px);
     }
-
-    100%{
+    100% {
         opacity: 1;
         transform: translateY(0px);
     }
@@ -180,20 +177,20 @@ nav {
     }
     .cta {
         padding: 10px 0px 0px 0px;
-        margin-left: -50px;
     }
     .laptop-select {
         bottom: 5%;
-        right: 25%;
+        right: 50%;
         width: 50%;
-        transform: translate(50%, 5);
+        transform: translate(50%, 5%);
     }
     .cover img {
-        height: 80%;
+        height: 60%;
     }
-    .small-circle, 
-    .medium-circle, 
-    .big-circle {
+    .small-circle, .medium-circle, .big-circle {
         opacity: 0.2;
+    }
+    .small-circle {
+        width: 50%;
     }
 }
