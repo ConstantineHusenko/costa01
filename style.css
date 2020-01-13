@@ -190,6 +190,7 @@ nav {
     }
     .cover img {
         height: 70%;
+        filter: drop-shadow(2px 9px 6px black);
     }
     .small-circle, .medium-circle, .big-circle {
         opacity: 0.5;
